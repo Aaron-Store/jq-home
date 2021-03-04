@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>封装jQuery轮播图插件</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .wrapper {
+            width: 590px;
+            height: 470px;
+            border: 1px solid black;
+            margin: 100px auto 0px;
+            /* border-radius: 50%; */
+        }
+
+        .wrapper img {
+            width: 590px;
+            height: 470px;
+        }
+
+        /* .demo {
+            width: 100px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .demo2 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="../img/1.jpg" alt="">
+        <img src="../img/2.jpg" alt="">
+        <img src="../img/3.jpg" alt="">
+        <img src="../img/4.jpg" alt="">
+        <img src="../img/5.jpg" alt="">
+    </div>
+    <!-- <div class="demo"></div>
+    <div class="demo2"></div> -->
+    <script src="./jquery.js"></script>
+    <script src="swiper.js"></script>
+    <script>
+        /*
+         轮播图需要传递的参数：
+            1. 轮播的内容-- -》 dom节点列表
+            2. 动画效果----》 type: 'animate', 'fade'
+            3. 是否自动轮播-- -》
+            4. 是否显示左右按钮
+            5. 是否显示小圆点
+            6. 自动轮播时间
+            7. 每一次轮播对象的大小  width height
+            8. 自动轮播方向
+        */
+        $('.wrapper').swiper({
+            list: $('img'),
+            type: 'animate',
+            isAuto: true,
+            showSpotsBtn: true,
+            showChangeBtn: true,
+            autoTime: 2000,
+            direction: 'right'
+        })
+    </script>
+</body>
+
+</html>

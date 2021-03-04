@@ -1,0 +1,199 @@
+.fs3 .information{
+    width: 190px;
+    height:102px;
+    /* background-color: chartreuse; */
+    position: relative;
+}
+
+.fs3 .information::after{
+    position: absolute;
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+    content: " ";
+    bottom: 0;
+}
+
+
+.fs3 .information .information-1{
+    width: 100%;
+    height:67px;
+    padding: 12px 20px  0 20px ;
+    box-sizing: border-box;
+}
+.fs3 .information .information-2{
+    width: 100%;
+    height:25px;
+    /* background-color: cornflowerblue; */
+}
+
+.fs3 .information .information-1>*{
+    float: left;
+}
+.fs3 .information  a{
+    color: #333;
+}
+.fs3 .information .information-1 a:hover{
+    color: red;
+}
+.fs3 .information .information-1 .logo-jd img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.fs3 .information .information-1 .login-register{
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.fs3 .information .information-1 p{
+    color: #333;
+    line-height: 12px;
+    text-align: left;
+    margin:2px 0 ;
+    cursor: pointer;
+}
+
+.fs3 .information .information-2{
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+.fs3 .information .information-2 a{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 13px;
+    background: #e1251b;
+}
+.fs3 .information .information-2 a:nth-of-type(2){
+    background: #363634;
+    color: #e5d790;    
+}
+
+.fs3 .information .information-2 a:hover{
+    color: #fff;
+    background: #e1251b;
+    transition: .3s ease,color .3s ease;
+}
+
+
+/* news */
+.fs3 .news .news_hd{
+    width: 100%;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #333; 
+}
+.fs3 .news .news_hd .news_title{
+    float: left;
+}
+.fs3 .news .news_hd a{
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.fs3 .news .news_list li{
+    max-width: 160px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+    margin-bottom: 6px;
+    padding-left: 20px;
+}
+.fs3 .news .news_list li *:hover{
+    cursor: pointer;
+    color: #e1251b;
+}
+
+.fs3 .news .news_list li .news_tag{
+    float: left;  
+    font-size: 12px;
+    height: 16px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center;
+    color: #e1251b;
+    background-color: rgba(225,37,27,.08);
+    margin-right: 10px;
+}
+.fs3 .service {
+    position: relative;
+    width: 190px;
+    height: 238px;
+}
+.fs3 .service  .service-list{
+    width: 190px;
+    height: 238px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.fs3 .service  .service-list .service_item{
+    float: left;
+    width: 61px;
+    height: 55px;
+    cursor: pointer;
+    /* background-color: cyan; */
+    margin: 1px;
+    box-sizing: content-box;
+}
+.fs3 .service  .service-list .service_item:hover{
+    color: #e1251b;
+}
+
+.fs3 .service  .service-list  .service_item_icon {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+.fs3 .service  .service-list  p{
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+.fs3 .service  .service-list  .service_item_icon img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.fs3 .service .service-expand{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+    display: none;
+}
+
+
+.fs3 .service .service-expand .expend-close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 10px;
+    left: 50%;
+    font-size: 20px;
+    
+    border-radius: 50%;
+    text-align: center;
+}
+.fs3 .service .service-expand .expend-close:hover{
+    background-color:  #e1251b;
+    color: #fff;
+    transition: .3s ease,color .3s ease;
+}

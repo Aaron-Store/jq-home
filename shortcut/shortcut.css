@@ -1,0 +1,200 @@
+/* 
+    导航条样式
+*/
+#shortcut .w{
+    height: 30px;
+}
+
+#shortcut .position{
+    float: left;
+}
+#shortcut .nav{
+    float: right;
+}
+#shortcut .nav>*{
+    float: left;
+}
+#shortcut .nav a:hover {
+    color: red;
+}
+a.red{
+    color: red;
+}
+.nav>span{
+    display: inline-block;
+    width: 1px;
+    margin: 11px 5px 0;
+    height: 10px;
+    background: #999;
+}
+.nav>li{
+    position: relative;
+}
+.nav>li:hover{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.nav>li>.dt{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.nav .iconfont{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.dt.dt-icon{
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 10;
+}
+.nav .dt.dt-icon{
+    padding-right: 20px;
+    
+}
+.dt-hover:hover .dt{
+    background-color: #fff;
+    border-top-color: #ccc;
+    border-left-color: #ccc;
+    border-right-color: #ccc;
+}
+.dt-hover:hover .dropdown{
+    display: block; 
+}
+
+
+
+/* dropdown */
+.dropdown{
+    position: absolute;
+    top: 30px;
+    border: 1px solid #ccc;
+    background: #fff;
+    line-height: 24px;
+    display: none;
+    z-index: 6;
+}
+.dropdown dl{
+    overflow: hidden;
+    padding: 10px 0 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+.dropdown dl dt{
+    font-weight: bold;
+    color: #666;
+}
+.dropdown dl dd{
+    float: left;
+    white-space: nowrap;
+}
+
+/* --------- */
+.my-jd .dropdown{
+    width: 280px;
+}
+.my-jd .dropdown dd{
+    width: 126px;
+}
+
+.company .dropdown{
+    width: 140px;
+}
+
+.company .dropdown dd{
+    width: 56px;
+}
+
+.service .dropdown{
+    width: 170px;
+    right: 0;
+}
+
+.service .dropdown dd{
+    width: 70px;
+}
+
+.web-app .dropdown{
+    width: 1188px;
+    right: -84px;
+    padding: 15px 0;
+}
+.web-app .dropdown dl{
+    float: left;
+    border-right: 1px solid #ccc;
+    padding-top: 0;
+    border-bottom: none;
+}
+.web-app .dropdown dl:last-of-type{
+    border: none;
+}
+
+.web-app .dropdown dd{
+    width: 85px;
+}
+
+
+
+/* position */
+.position .dt{
+    padding: 0 10px;
+}
+.position .dt .iconfont{
+    color:  #f10215;
+}
+.position >.dropdown{
+    width: 300px;
+    padding: 10px;
+}
+.position >.dropdown dl{
+    padding: 0;
+}
+.position >.dropdown dl:nth-of-type(2) dd{
+    padding: 15px 0;
+}
+.position >.dropdown dd{
+    width: 60px;
+    padding:2px 0; 
+}
+.position >.dropdown .sites dd{
+    width: 145px;
+}
+
+.position >.dropdown a{
+    display: inline-block;
+    padding:  0 5px  ;
+    position: relative;
+}
+
+.position >.dropdown .province  a:hover{
+    background: #f4f4f4;
+    color: #f10215;
+}
+
+ .position >.dropdown .province a.active{
+    background: #f10215;
+    color: #fff;
+    text-align: center;
+}
+
+.position >.dropdown a:hover{
+    color: #f10215;
+}
+.position >.dropdown .sites a{
+    overflow: hidden;
+}
+.position >.dropdown .sites a>*{
+    float: left;
+}
+.position >.dropdown .sites img{
+    width: 15px;
+    height: 10px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+

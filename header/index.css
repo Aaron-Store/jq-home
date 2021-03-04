@@ -1,0 +1,193 @@
+header .w{
+    position: relative;
+    height: 100%;
+    /* background-color: cadetblue; */
+}
+
+header .logo{
+    width: 190px;
+    height: 120px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    background-image: url(//misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/header/sprite.png);
+}
+
+header .logo .logo-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: none;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/* search  */
+header .search{
+    width: 100%;
+    position: relative;
+}
+
+header .search .search-box{
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e2231a;
+    background: #fff;
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    /* font-size: 0; */
+}
+header .search .search-box input{
+    width: 425px;
+    height: 26px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    line-height: 26px;
+    font-size: 12px;
+    outline: none;
+    /* vertical-align: top; */
+}
+
+header .search .search-box button{
+    width: 58px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: #e1251b;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;;
+    cursor: pointer;
+    outline: none;
+
+    position: absolute;
+    right: 0;
+}
+header .search .search-box .search-list{
+    width: 486px;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    top:32px;
+    box-sizing: border-box;
+    line-height: 20px;
+    padding:0 10px;
+    z-index: 10;
+    display: none;
+}
+header .search .search-box .search-list li{
+    padding: 2px 0;
+    cursor: pointer;
+}
+header .search .search-box .search-list .search-list-close{
+    text-align: right;
+}
+header .search .search-box .search-list li:hover{
+    background: #f5f5f5!important;
+}
+
+
+/* hotwords */
+header  .search   .hotwords{
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 260px;
+    top: 65px;
+}
+header  .search   .hotwords a{
+    margin-right: 10px;
+}
+header  .search   .hotwords a:hover{
+    color: red;
+}
+/*car  */
+header  .car {
+    width: 130px;
+    height: 34px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    right: 230px;
+    top: 25px;
+    color: red;
+    cursor: pointer;
+} 
+header .car .iconfont {
+    margin-right: 13px;
+}
+header .car .count{
+    line-height: 12px;
+    min-width: 12px;
+    font-size: 12px;
+    font-style: normal;
+    padding: 1px 3px;
+    text-align: center;
+    background: #e1251b;
+    color: #fff;
+    position: absolute;
+    border-radius: 7px;
+    top: 1px;
+    left: 29px;
+}
+
+header .car .dt{
+    position: relative;
+    z-index: 5;
+    border: 1px solid #e3e4e5;
+}
+header .car:hover .dt{
+    border: 1px solid #c81623;
+    border-bottom: 1px solid transparent;
+}
+header .car .dt:hover .dropdown{
+    display: block;
+}
+header .car .dropdown{
+    position: absolute;
+    top:  35px;
+    right: 0;
+    width: 308px;
+    padding: 10px 0;
+    border: 1px solid red;
+    background: #fff;
+    display: none;
+    color: #999;
+    z-index: 4;
+}
+header .car  .dropdown .car-empty{
+    display: inline-block;
+    vertical-align: middle;
+    width: 56px;
+    height: 49px;
+    background-image: url(//img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png);
+}
+/* navitems */
+header .navitems{
+    position: absolute;
+    bottom: 0;
+    left: 203px;
+}
+header .navitems li{
+    float: left;
+}
+header .navitems li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #333;
+    margin: 0 11px;
+}
+header .navitems li a:hover{
+    color: red;
+}
+.navitems li a.red {
+    color: #e1251b;
+    font-weight: 700;
+}
